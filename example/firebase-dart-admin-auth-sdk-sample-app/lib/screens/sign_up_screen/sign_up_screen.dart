@@ -52,15 +52,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       obscure: true,
                     ),
                     30.vSpace,
-                    Button(
-                      onTap: () => value.signUp(
+
+                    // change button type to change color, while keeping loading and tap behavior
+                    ElevatedButton(
+                      onPressed: value.loading ?
+                          null :
+                          () => value.signUp(
                           _emailController.text, _passwordController.text, () {
                         Navigator.of(context).push(MaterialPageRoute(
                           builder: (context) => const HomeScreen(),
                         ));
                       }),
-                      loading: value.loading,
-                      title: 'Sign Up',
+                      style: ButtonStyle(backgroundColor: WidgetStateProperty.all(const Color.fromARGB(150, 150, 90, 90))),
+                      child: value.loading ? const Text('Loading') : const Text('Sign Up'),
                     ),
                     20.vSpace,
                     Text.rich(
