@@ -12,9 +12,9 @@ void main() async {
   if (kIsWeb) {
     //Pass the enviroment variables into the function below, I.E API key and project ID
     FirebaseApp.initializeAppWithEnvironmentVariables(
-        apiKey: 'Your Api Key',
-        projectId: 'Your Project Id',
-        bucketName: 'Your Bucket Name');
+        apiKey: 'AIzaSyCeyfdaXjG42DhG4ghILZ8qRv_K_Q2kWs4',
+        projectId: 'alvi-aziz-firebasesetup',
+        bucketName: 'alvi-aziz-firebasesetup.appspot.com');
   } else {
     //  When working with mobile
     if (Platform.isAndroid || Platform.isIOS) {

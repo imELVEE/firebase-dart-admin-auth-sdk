@@ -228,7 +228,7 @@ packages:
       path: "../../firebase-dart-admin-auth-sdk"
       relative: true
     source: path
-    version: "0.0.1-pre+4"
+    version: "0.0.1-pre+5"
   fixnum:
     dependency: transitive
     description:
