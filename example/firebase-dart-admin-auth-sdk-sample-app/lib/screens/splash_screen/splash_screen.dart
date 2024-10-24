@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Container(
         height: MediaQuery.sizeOf(context).height,
         width: MediaQuery.sizeOf(context).width,
-        color: Colors.purple,
+        color: Color.fromARGB(255, 58, 183, 104),
         child: Center(
           child: Text(
             'SAMPLE APP',
